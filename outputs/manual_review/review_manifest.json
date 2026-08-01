@@ -1,0 +1,13 @@
+{
+  "unique_samples": 84,
+  "review_rows": 168,
+  "reviewer_slots": 2,
+  "random_seed": 20260720,
+  "blind_fields_hidden": [
+    "真实账户编号",
+    "模型风险分",
+    "账户标签",
+    "内部关联评分",
+    "内部解释校验结果"
+  ]
+}

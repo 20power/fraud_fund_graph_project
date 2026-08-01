@@ -1,0 +1,20 @@
+metrics:
+  auc_absolute_target: 0.85
+  auc_absolute_point_improvement: 0.05
+  pr_auc_relative_improvement: 0.20
+  top5_recall_absolute_target: 0.50
+  top5_recall_relative_improvement: 0.15
+link_analysis:
+  top_related_accounts: 20
+  labeled_hit_rate_target: 0.50
+  internal_manual_explanation_pass_rate_target: 0.70
+reports:
+  minimum_evidence_types: 2
+  minimum_case_studies: 5
+  deterministic_template_required: true
+  external_llm_enabled: false
+runtime:
+  os: windows
+  cpu_only: true
+  minimum_memory_gb: 16
+  docker_optional: true

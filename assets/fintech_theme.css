@@ -1,0 +1,59 @@
+:root {
+  --bg: #06111e;
+  --surface: #0a1929;
+  --surface-2: #0d2033;
+  --line: #17364f;
+  --text: #dce9f7;
+  --muted: #819bb1;
+  --blue: #2d8cff;
+  --blue-soft: #7dd3fc;
+  --gold: #f3b84b;
+  --danger: #ef5b5b;
+}
+
+.stApp { background: var(--bg); color: var(--text); }
+[data-testid="stHeader"] { background: transparent; }
+[data-testid="stToolbar"] { display: none; }
+[data-testid="stSidebar"] { background: #071522; border-right: 1px solid var(--line); }
+[data-testid="stSidebar"] > div:first-child { padding-top: 1.25rem; }
+[data-testid="stSidebar"] .stRadio label { padding: .55rem .35rem; color: #9ab1c5; }
+[data-testid="stSidebar"] .stRadio label:has(input:checked) { color: #fff; background: #0d2942; border-left: 3px solid var(--blue); border-radius: 4px; }
+
+.block-container { max-width: 1700px; padding-top: 1.35rem; padding-bottom: 3rem; }
+h1,h2,h3 { color: #f2f7fc !important; letter-spacing: -.015em; }
+p,li { color: #a9bed0; }
+
+.fin-header { display:flex; justify-content:space-between; align-items:center; padding: 2px 0 18px; border-bottom:1px solid var(--line); margin-bottom:18px; }
+.fin-title { color:#f4f8fc; font-size:26px; font-weight:700; letter-spacing:.01em; }
+.fin-kicker { color:var(--blue-soft); font-size:11px; letter-spacing:.13em; font-weight:700; margin-bottom:4px; }
+.fin-meta { color:var(--muted); font-size:12px; text-align:right; line-height:1.7; }
+.status-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#46d7a2; margin-right:7px; box-shadow:0 0 0 3px rgba(70,215,162,.12); }
+.section-label { color:#fff; font-size:16px; font-weight:650; margin:8px 0 4px; }
+.section-note { color:var(--muted); font-size:12px; margin-bottom:10px; }
+.risk-badge { display:inline-block; border:1px solid #854348; background:#331b24; color:#ff8585; border-radius:4px; padding:3px 8px; font-size:12px; font-weight:650; }
+.gold-badge { display:inline-block; border:1px solid #7a6030; background:#302716; color:#ffd278; border-radius:4px; padding:3px 8px; font-size:12px; font-weight:650; }
+.evidence-list { border-top:1px solid var(--line); margin-top:12px; padding-top:10px; }
+.evidence-item { color:#aac0d2; font-size:13px; padding:5px 0; border-bottom:1px solid rgba(23,54,79,.55); }
+.callout { background:#0a1c2d; border:1px solid var(--line); border-left:3px solid var(--gold); padding:12px 14px; border-radius:5px; color:#a9bed0; font-size:13px; }
+.sidebar-brand { color:#f4f8fc; font-size:18px; font-weight:750; line-height:1.35; margin-bottom:4px; }
+.sidebar-sub { color:#69849a; font-size:10px; letter-spacing:.12em; margin-bottom:20px; }
+.sidebar-status { margin-top:22px; padding:12px; border:1px solid var(--line); border-radius:6px; background:#091a29; color:#7f9bb2; font-size:11px; line-height:1.7; }
+
+[data-testid="stMetric"] { background:#0c1f31; border:1px solid var(--line); border-radius:7px; padding:15px 17px; min-height:112px; }
+[data-testid="stMetricLabel"] { color:#8aa3b8; font-size:12px; }
+[data-testid="stMetricValue"] { color:#58a9ff; font-size:28px; font-weight:700; font-variant-numeric:tabular-nums; }
+[data-testid="stMetricDelta"] { color:#68d6ae; font-size:11px; }
+[data-testid="stVerticalBlockBorderWrapper"] { background:#081827; border-color:var(--line) !important; border-radius:7px; }
+
+.stButton > button, .stDownloadButton > button { background:#1468d4; border:1px solid #2d8cff; color:white; border-radius:5px; min-height:38px; font-weight:650; }
+.stButton > button:hover, .stDownloadButton > button:hover { background:#1f7dea; border-color:#7dc1ff; color:white; }
+.stTextInput input,.stNumberInput input,.stDateInput input { background:#081827 !important; color:#dce9f7 !important; border-color:#25445e !important; }
+[data-baseweb="select"] > div { background:#081827 !important; border-color:#25445e !important; color:#dce9f7 !important; }
+[data-testid="stDataFrame"] { border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+hr { border-color:var(--line) !important; }
+
+@media (max-width: 900px) {
+  .fin-header { align-items:flex-start; gap:14px; }
+  .fin-meta { text-align:left; }
+  .block-container { padding-left:1rem; padding-right:1rem; }
+}

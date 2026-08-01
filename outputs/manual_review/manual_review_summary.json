@@ -1,0 +1,35 @@
+{
+  "source_workbook": "outputs/manual_review/链路盲审表.xlsx",
+  "overall": {
+    "submitted_rows": 0,
+    "valid_rationality_reviews": 0,
+    "rationality_pass_count": 0,
+    "rationality_pass_rate": null,
+    "valid_action_reviews": 0,
+    "further_review_rate": null,
+    "valid_evidence_reviews": 0,
+    "evidence_pass_rate": null
+  },
+  "by_reviewer_slot": {
+    "A": {
+      "submitted_rows": 0,
+      "valid_rationality_reviews": 0,
+      "rationality_pass_count": 0,
+      "rationality_pass_rate": null,
+      "valid_action_reviews": 0,
+      "further_review_rate": null,
+      "valid_evidence_reviews": 0,
+      "evidence_pass_rate": null
+    },
+    "B": {
+      "submitted_rows": 0,
+      "valid_rationality_reviews": 0,
+      "rationality_pass_count": 0,
+      "rationality_pass_rate": null,
+      "valid_action_reviews": 0,
+      "further_review_rate": null,
+      "valid_evidence_reviews": 0,
+      "evidence_pass_rate": null
+    }
+  }
+}

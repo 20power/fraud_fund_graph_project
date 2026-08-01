@@ -1,0 +1,46 @@
+project_name: fraud_fund_graph_project
+paths:
+  accounts: data/raw/账户表.xlsx
+  edges: data/raw/交易边表.xlsx
+  labels: data/raw/风险标签表.xlsx
+  data_note: data/raw/说明.txt
+  outputs: outputs
+  models: models
+  logs: logs
+columns:
+  account_id: 账户脱敏id
+  account_label: 是否风险账户标签
+  opening_months: 开户时长
+  region_code: 地区编码
+  customer_type: 客户类型
+  label_type: 标签类型
+  payer_id: 付款账户脱敏id
+  payee_id: 收款账户脱敏id
+  transaction_time: 交易时间
+  amount: 金额
+labels:
+  other: 0
+  suspect: 1
+  victim: 2
+  text_mapping:
+    "0": 其它
+    "1": 嫌疑人
+    "2": 受害人
+split:
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+  account_disjoint: true
+time:
+  feature_cutoff: "2025-12-31 23:59:59"
+  sensitivity_cutoffs:
+    - "2025-10-31 23:59:59"
+    - "2025-11-30 23:59:59"
+    - "2025-12-31 23:59:59"
+  label_as_of: "2025-12-31 23:59:59"
+  label_time_available: false
+raw_data_policy:
+  read_only: true
+  copy_raw_files: false
+  retain_precise_time_and_amount: true

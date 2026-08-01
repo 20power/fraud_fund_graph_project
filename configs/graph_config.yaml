@@ -1,0 +1,19 @@
+max_hops: 3
+top_related_accounts: 20
+max_anchors: 50
+neighbor_cap_per_expansion: 40
+beam_width: 160
+max_paths_per_anchor: 30
+path_scoring:
+  node_risk_weight: 0.35
+  edge_strength_weight: 0.25
+  recency_weight: 0.15
+  structure_weight: 0.15
+  hop_penalty_weight: 0.10
+patterns:
+  fan_in_min_counterparties: 10
+  fan_out_min_counterparties: 10
+  rapid_transfer_ratio_threshold: 0.5
+  repeated_counterparty_ratio_threshold: 0.8
+  bidirectional_ratio_threshold: 0.5
+  high_amount_quantile: 0.95

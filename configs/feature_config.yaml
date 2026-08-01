@@ -1,0 +1,20 @@
+amount:
+  use_raw_value: true
+  magnitude_uses_absolute_value: true
+  negative_flag: true
+  quantile_bins: 10
+  clip_lower_quantile: 0.001
+  clip_upper_quantile: 0.999
+time:
+  hour_bins: [0, 6, 12, 18, 24]
+  rapid_transfer_window_hours: 24
+  active_day_timezone: Asia/Shanghai
+graph:
+  include_self_loops_in_behavior_features: true
+  include_self_loops_in_relationship_graph: false
+  use_training_labels_for_risk_neighbor_features_only: true
+  pagerank_alpha: 0.85
+  two_hop_neighbor_cap: 100000
+categorical:
+  region_as_string: true
+  unknown_token: __UNKNOWN__
